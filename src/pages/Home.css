@@ -1,0 +1,76 @@
+/* Full-Page Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("../assets/background2.jpg") no-repeat center center/cover; /* Add your background image here */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: "DualisLite", sans-serif;
+  color: #f4e3cf; /* Light beige color for text */
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.hero-subtitle {
+  color: #d4a373;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* About Section */
+.about {
+  padding: 3rem 1.5rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-family: "DualisLite", sans-serif;
+  font-size: 2.5rem;
+  color: #28362d;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}

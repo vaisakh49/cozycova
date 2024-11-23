@@ -1,0 +1,11 @@
+/* Example: Overriding Navbar Brand */
+.navbar-brand {
+  font-family: "DualisLite", sans-serif;
+  font-size: 2rem;
+  color: #d4a373 !important;
+}
+
+/* Change background color */
+.navbar {
+  background-color: #28362d !important; /* Dark green */
+}
