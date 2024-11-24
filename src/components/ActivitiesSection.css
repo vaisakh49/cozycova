@@ -47,3 +47,32 @@
     font-size: 0.9rem;
   }
 }
+
+.activity-carousel h3 {
+  font-size: 1.5rem; /* Default font size for desktop */
+}
+
+.activity-carousel p {
+  font-size: 1rem; /* Default font size for desktop */
+}
+
+/* Reduce text size on smaller screens */
+@media (max-width: 768px) {
+  .activity-carousel h3 {
+    font-size: 1.2rem; /* Smaller heading font size for mobile */
+  }
+
+  .activity-carousel p {
+    font-size: 0.9rem; /* Smaller paragraph font size for mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .activity-carousel h3 {
+    font-size: 1rem; /* Even smaller heading font size for extra small screens */
+  }
+
+  .activity-carousel p {
+    font-size: 0.8rem; /* Even smaller paragraph font size for extra small screens */
+  }
+}

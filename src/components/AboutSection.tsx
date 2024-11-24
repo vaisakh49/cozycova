@@ -60,12 +60,12 @@ const AboutSection: React.FC = () => {
             }`}
             key={index}
           >
+            <div className="about-image">
+              <img src={section.image} alt={section.title} />
+            </div>
             <div className="about-text">
               <h4>{section.title}</h4>
               <p>{section.content}</p>
-            </div>
-            <div className="about-image">
-              <img src={section.image} alt={section.title} />
             </div>
           </div>
         ))}
