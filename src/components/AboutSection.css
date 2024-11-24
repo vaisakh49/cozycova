@@ -1,8 +1,6 @@
 /* Main Container for About Section */
 .about-section-wrapper {
   padding: 40px 20px;
-  /* background-color: #f9f9f9; */
-  /* gap: 200px; */
 }
 
 /* About Section Styling */
@@ -51,6 +49,7 @@
   font-size: 1.6rem;
   color: #28362d;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .about-text p {
@@ -112,7 +111,7 @@
 
   .about-section-row {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
   }
 
   .about-text {
