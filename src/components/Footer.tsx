@@ -12,6 +12,9 @@ const Footer: React.FC = () => {
           <a href="/gallery">Gallery</a>
         </div>
         <div>Cozy cova, Near Sengulam Dam, Sengulam, Idukki, Kerala 685565</div>
+        <p>
+          <a href="tel:+919074561930">+91 90745 61930</a>
+        </p>
         <div className="footer-info">
           <p>&copy; 2024 Cozy Cova Homestay. All rights reserved.</p>
         </div>
@@ -24,7 +27,7 @@ const Footer: React.FC = () => {
             <i className="fab fa-facebook"></i>
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/cozy_cova/"
             target="_blank"
             rel="noopener noreferrer"
           >
