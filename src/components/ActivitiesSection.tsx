@@ -53,11 +53,6 @@ const ActivitiesSection: React.FC = () => {
   return (
     <section className="activities-section py-5">
       <Container>
-        <h2 className="text-center mb-4">Activities</h2>
-        <p className="text-center mb-4">
-          Explore exciting activities and experiences during your stay at Cozy
-          Cova. Please contact us to pre-book!
-        </p>
         <Carousel className="activity-carousel">
           {activities.map((activity, index) => (
             <Carousel.Item key={index}>
