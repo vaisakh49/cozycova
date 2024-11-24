@@ -2,7 +2,7 @@
 .hero {
   position: relative;
   height: 100vh;
-  background: url("../assets/background2.jpg") no-repeat center center/cover; /* Add your background image here */
+  background: url("../assets/home-side-2.jpg") no-repeat center center/cover; /* Add your background image here */
 }
 
 .hero-overlay {
@@ -20,20 +20,24 @@
 }
 
 .hero-title {
-  font-family: "DualisLite", sans-serif;
+  font-family: "Bodoni Moda", serif;
   color: #f4e3cf; /* Light beige color for text */
   font-size: 3.5rem;
   margin: 0;
+  font-weight: 600;
 }
 
 .hero-subtitle {
+  font-family: "Bodoni Moda", serif;
   color: #d4a373;
   font-size: 1.5rem;
+  font-weight: 600;
   margin-top: 0.5rem;
 }
 
 /* About Section */
 .about {
+  font-family: "Bodoni Moda", serif;
   padding: 3rem 1.5rem;
   background-color: #f9f9f9;
   text-align: center;

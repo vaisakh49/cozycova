@@ -1,8 +1,11 @@
 /* Example: Overriding Navbar Brand */
 .navbar-brand {
-  font-family: "DualisLite", sans-serif;
+  font-family: "Bodoni Moda", serif; /* Apply the font */
   font-size: 2rem;
-  color: #d4a373 !important;
+  font-weight: 600; /* Semi-Bold for emphasis */
+  color: #d4a373 !important; /* Gold-like color */
+  letter-spacing: 2px; /* Add spacing between letters for elegance */
+  text-transform: uppercase; /* Ensure the title is all uppercase */
 }
 
 /* Change background color */

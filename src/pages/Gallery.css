@@ -1,0 +1,48 @@
+/* Gallery Page Styles */
+.gallery-page {
+  /* background-color: #f9f9f9; */
+}
+
+.gallery-heading {
+  font-size: 2rem;
+  color: #333;
+}
+
+.gallery-description {
+  font-size: 1rem;
+  color: #777;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  height: 200px; /* Set uniform height */
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and fill the card */
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1); /* Add zoom effect on hover */
+}
+
+/* Modal Styling */
+.modal-body {
+  background-color: black; /* Optional: Make modal background black for better focus */
+}
+
+.modal-body img {
+  max-height: 90vh; /* Ensure the image fits the screen */
+  object-fit: contain; /* Maintain aspect ratio */
+}

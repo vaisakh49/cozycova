@@ -1,0 +1,41 @@
+.partners-section {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+}
+
+.partners-section h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #28362d; /* Dark green */
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.partner-link {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.partner-link:hover {
+  transform: scale(1.1);
+}
+
+.partner-logo {
+  width: 120px; /* Adjust size */
+  height: auto;
+  object-fit: contain;
+  /* filter: grayscale(100%); */
+  transition: filter 0.3s ease-in-out;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%);
+}
