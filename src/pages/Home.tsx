@@ -4,6 +4,7 @@ import AboutHomestay from "../components/AboutSection";
 import { Container } from "react-bootstrap";
 import MapSection from "../components/MapSection";
 import WhatsAppButton from "../components/WhatsAppButton";
+import ActivitiesSection from "../components/ActivitiesSection";
 // import MyMapComponent from "../components/MyMapComponent";
 // import PartnersSection from "../components/PartnersSection";
 
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
 
       <Container>
         <AboutHomestay />
+        <ActivitiesSection />
         <MapSection
           centerCoordinates={[10.1185, 77.0603]} // Coordinates for Munnar (example)
           zoomLevel={13}

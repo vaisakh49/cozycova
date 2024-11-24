@@ -1,9 +1,9 @@
 import React from "react";
 import "./AboutSection.css";
-import dining from "../assets/dining-1.jpg";
-import amenities from "../assets/dam-view.jpg";
-import activities from "../assets/activities.png";
-import relaxation from "../assets/relaxation.jpg";
+import dining from "../assets/gallery/dining-1.jpg";
+import amenities from "../assets/gallery/dam-view.jpg";
+import activities from "../assets/gallery/activities.png";
+import relaxation from "../assets/gallery/relaxation.jpg";
 
 const AboutSection: React.FC = () => {
   const sections = [

@@ -1,0 +1,49 @@
+.activities-section {
+  padding: 40px 0;
+}
+
+.activity-carousel {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.activity-carousel-item {
+  text-align: center;
+}
+
+.activity-carousel-img {
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.carousel-caption h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .activity-carousel-img {
+    height: 300px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
