@@ -97,3 +97,36 @@
     margin-top: 15px;
   }
 }
+
+/* Extra Small Devices (Mobile Phones) */
+@media (max-width: 576px) {
+  .about-heading h4 {
+    font-size: 1.5rem; /* Smaller heading for very small screens */
+  }
+
+  .about-content p {
+    font-size: 0.95rem; /* Slightly smaller font size for mobile */
+    line-height: 1.5; /* Adjust line height for better fitting */
+    margin-bottom: 20px; /* Ensure good space at the bottom */
+  }
+
+  .about-section-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-image {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  /* Image Styling */
+  .about-image img {
+    border-radius: 8px; /* Slightly smaller border radius for images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Less pronounced shadow for small screens */
+  }
+}

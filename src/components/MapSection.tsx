@@ -1,45 +1,20 @@
 import React from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
-
 import "./MapSection.css";
 
-// Define the props type
-interface MapSectionProps {
-  centerCoordinates: [number, number];
-  zoomLevel: number;
-  title: string;
-  popupContent: string;
-}
-
-const MapSection: React.FC<MapSectionProps> = ({
-  centerCoordinates,
-  zoomLevel,
-  title,
-  popupContent,
-}) => {
+const MapSection: React.FC = () => {
   return (
     <div className="map-section">
-      <h4>{title}</h4>
+      <h4 className="map-title">Find Us on Google Maps</h4>
       <div className="map-container">
-        <MapContainer
-          center={centerCoordinates}
-          zoom={zoomLevel}
-          scrollWheelZoom={false}
-          style={{ height: "400px", width: "100%" }}
-        >
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          />
-          <Marker
-            position={centerCoordinates}
-            icon={L.icon({ iconUrl: "/images/marker-icon.png" })}
-          >
-            <Popup>{popupContent}</Popup>
-          </Marker>
-        </MapContainer>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5718.047193444153!2d77.02945375486601!3d10.01334961366641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07990031763281%3A0xab5dcc8a69b0f352!2sCozy%20cova!5e1!3m2!1sen!2sin!4v1732486279212!5m2!1sen!2sin"
+          width="100%"
+          height="400"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
   );

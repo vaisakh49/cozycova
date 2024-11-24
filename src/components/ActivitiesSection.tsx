@@ -12,6 +12,12 @@ import campfireImg from "../assets/activities/campfire.jpg"; // Add this image
 
 const activities = [
   {
+    title: "Off-Road Jeep Trekking",
+    description:
+      "Explore rugged terrains and hidden trails with exciting off-road jeep adventures.",
+    image: jeepTrekkingImg,
+  },
+  {
     title: "Ziplining",
     description:
       "Feel the adrenaline rush as you zip through lush green landscapes, surrounded by breathtaking views.",
@@ -22,12 +28,6 @@ const activities = [
     description:
       "Soar high above the hills and enjoy a panoramic view of the stunning Munnar region.",
     image: hotAirBalloonImg,
-  },
-  {
-    title: "Off-Road Jeep Trekking",
-    description:
-      "Explore rugged terrains and hidden trails with exciting off-road jeep adventures.",
-    image: jeepTrekkingImg,
   },
   {
     title: "Kathakali and Kalaripayattu Performances",

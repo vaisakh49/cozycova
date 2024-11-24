@@ -1,6 +1,5 @@
 import React from "react";
 import "./AboutSection.css";
-import dining from "../assets/gallery/dining-1.jpg";
 import amenities from "../assets/gallery/dam-view.jpg";
 import activities from "../assets/gallery/activities.png";
 import relaxation from "../assets/gallery/relaxation.jpg";
@@ -8,28 +7,22 @@ import relaxation from "../assets/gallery/relaxation.jpg";
 const AboutSection: React.FC = () => {
   const sections = [
     {
-      title: "Dining",
-      content:
-        "Indulge in a delightful dining experience during your stay at our homestay. Our cozy dining area offers the perfect setting to savor homemade meals and create cherished memories with loved ones.",
-      image: dining, // Replace with actual image paths
-    },
-    {
       title: "Amenities",
       content:
-        "- Located just 20 minutes from Munnar\n- Sengulam Dam is a 5-minute walk away\n- Enjoy cozy campfire evenings\n- Surrounded by nature, in a peaceful neighborhood\n- Cardamom and pepper plants cultivated on-site (Make a pre-order to get fresh spices!)\n- Main floor, bedroom, and kitchen access; upstairs entry is restricted\n- Cable TV and high-speed internet access in rooms",
-      image: amenities, // Replace with actual image path
+        "• <strong>Prime Location</strong>: Only 20 minutes away from Munnar and a 5-minute walk from Sengulam Dam.<br />• <strong>Natural Surroundings</strong>: Nestled in a peaceful neighborhood, surrounded by nature’s beauty.<br />• <strong>Campfire Evenings</strong>: Enjoy cozy evenings around a crackling campfire under the stars.<br />• <strong>Fresh Produce</strong>: Take a tour of our cardamom and pepper plants, grown right here at our homestay. You can even pre-order fresh spices!<br />• <strong>Modern Comforts</strong>: Access to the main floor, bedrooms, and kitchen. Upstairs entry is restricted for privacy.<br />• <strong>High-Speed Internet</strong>: Stay connected with high-speed internet access in all rooms, along with cable TV for your entertainment.",
+      image: amenities,
     },
     {
       title: "Activities",
       content:
-        "Our homestay offers exciting adventure activities and experiences that can be arranged with discounts:\n- Ziplining\n- Hot air balloon rides\n- Off-road jeep trekking\n- Traditional Kathakali and Kalaripayattu performances\n- Discounted tickets for Dream Valley and Wonder Valley Adventure Parks\n\nPlease contact us to pre-book these activities and enjoy an unforgettable experience.",
-      image: activities, // Replace with actual image path
+        "Our homestay offers a range of exciting adventure activities that you can book with discounts. Whether you’re into nature walks, exploring nearby landmarks, or enjoying quiet evenings, we can arrange these experiences for you. Please contact us to pre-book these activities and make your stay even more memorable.",
+      image: activities,
     },
     {
       title: "100% Satisfaction and Relaxation Guaranteed",
       content:
-        "Whether this is your first visit, or you have been a guest many times, we want your experience to be excellent. Our staff is always available to help with any questions or concerns you may have.",
-      image: relaxation, // Replace with actual image path
+        "Whether this is your first visit or you've been here many times, we are dedicated to making your experience outstanding. Our friendly staff is always ready to assist with any questions or concerns you may have. Rest assured, your satisfaction is our top priority.",
+      image: relaxation,
     },
   ];
 
@@ -46,7 +39,8 @@ const AboutSection: React.FC = () => {
             Munnar and a 5-minute walk from Sengulam Dam. Nestled in a peaceful
             neighborhood surrounded by nature, our homestay offers campfire
             evenings, fresh cardamom and pepper cultivation, and easy access to
-            adventure activities.
+            adventure activities. Whether you're here to relax or explore, Cozy
+            Cova provides the perfect setting.
           </p>
         </div>
       </div>
@@ -65,7 +59,7 @@ const AboutSection: React.FC = () => {
             </div>
             <div className="about-text">
               <h4>{section.title}</h4>
-              <p>{section.content}</p>
+              <p dangerouslySetInnerHTML={{ __html: section.content }} />
             </div>
           </div>
         ))}

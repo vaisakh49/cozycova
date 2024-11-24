@@ -23,12 +23,7 @@ const Home: React.FC = () => {
       <Container>
         <AboutHomestay />
         <ActivitiesSection />
-        <MapSection
-          centerCoordinates={[10.1185, 77.0603]} // Coordinates for Munnar (example)
-          zoomLevel={13}
-          title="Find Us on the Map"
-          popupContent="Cozy Cova Homestay, 20 minutes from Munnar, 5-minute walk to Sengulam Dam."
-        />
+        <MapSection />
         {/* <MyMapComponent /> */}
         {/* <PartnersSection /> */}
       </Container>
