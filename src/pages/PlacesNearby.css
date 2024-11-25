@@ -53,6 +53,21 @@
 
 .place-distance {
   font-size: 0.9rem;
-  color: #3498db;
+  color: #d4a373;
   font-weight: bold;
+}
+
+.directions-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #28362d;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.directions-button:hover {
+  background-color: #476450;
 }
