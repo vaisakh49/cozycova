@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutSection.css";
-import amenities from "../assets/gallery/home-long-2.jpg";
+import amenities from "../assets/gallery/dam-view.jpg";
 import activities from "../assets/gallery/activities.png";
 import relaxation from "../assets/gallery/relaxation.jpg";
 
