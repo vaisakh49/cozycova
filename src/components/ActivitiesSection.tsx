@@ -61,6 +61,7 @@ const ActivitiesSection: React.FC = () => {
                   className="d-block w-100 activity-carousel-img"
                   src={activity.image}
                   alt={activity.title}
+                  loading="lazy"
                 />
                 <Carousel.Caption>
                   <h3>{activity.title}</h3>

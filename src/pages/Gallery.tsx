@@ -95,7 +95,12 @@ const Gallery: React.FC = () => {
               onClick={() => handleImageClick(image)}
               role="button"
             >
-              <img src={image.src} alt={image.alt} className="gallery-image" />
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="gallery-image"
+                loading="lazy"
+              />
             </div>
           </Col>
         ))}
@@ -109,6 +114,7 @@ const Gallery: React.FC = () => {
               src={activeImage.src}
               alt={activeImage.alt}
               className="w-100"
+              loading="lazy"
             />
           )}
         </Modal.Body>

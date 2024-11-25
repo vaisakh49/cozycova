@@ -55,7 +55,7 @@ const AboutSection: React.FC = () => {
             key={index}
           >
             <div className="about-image">
-              <img src={section.image} alt={section.title} />
+              <img src={section.image} alt={section.title} loading="lazy" />
             </div>
             <div className="about-text">
               <h4>{section.title}</h4>

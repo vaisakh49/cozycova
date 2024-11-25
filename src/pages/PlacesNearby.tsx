@@ -141,7 +141,12 @@ const PlacesNearby: React.FC = () => {
         <div className="places-grid">
           {places.map((place, index) => (
             <div className="place-card" key={index}>
-              <img src={place.image} alt={place.name} className="place-image" />
+              <img
+                src={place.image}
+                alt={place.name}
+                className="place-image"
+                loading="lazy"
+              />
               <div className="place-details">
                 <h3 className="place-name">{place.name}</h3>
                 {/* <p className="place-description">{place.description}</p> */}

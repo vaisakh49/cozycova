@@ -29,6 +29,7 @@ const PartnersSection: React.FC = () => {
               src={partner.logo}
               alt={partner.name}
               className="partner-logo"
+              loading="lazy"
             />
           </a>
         ))}
